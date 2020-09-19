@@ -228,12 +228,12 @@ nav a:hover {
    ============ */
 
     .title {
-        float: left;
+        float: center;
     }
 
     nav {
         float: right;
-        width: 100%; /*38*/
+        width: 33%; /*38*/
     }
 
 /* ============
@@ -258,7 +258,7 @@ nav a:hover {
    =============== */
 
     .wrapper {
-        width: 1920px; /* 1140px - 10% for margins */
+        width: 1140px; /* 1140px - 10% for margins */
         margin: 0 auto;
     }
 }
