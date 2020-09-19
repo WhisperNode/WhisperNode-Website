@@ -57,7 +57,7 @@ textarea {
    ========================================================================== */
 
 body {
-    background: black
+    background-color: #000000;
     font: 16px/26px Montserrat; /*--Helvetica, Helvetica Neue, Arial-*/
 }
 
@@ -140,8 +140,8 @@ nav a:hover {
 }
 
 .footer-container footer {
-    color: white;
-    padding: 0px 0; /*20px*/
+    color: black;
+    padding: 40px 0; /*20px*/
 }
 
 /* ===============
