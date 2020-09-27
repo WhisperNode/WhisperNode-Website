@@ -1,0 +1,432 @@
+@font-face {
+    font-family: Averta;
+    src: url(https://d33wubrfki0l68.cloudfront.net/0c5346ac5b77e0038a428b2363efc1b5fa92b09d/109c8/fonts/avertape-regular.otf);
+    font-weight: 400;
+    font-display: block;
+}
+
+@font-face {
+    font-family: Averta;
+    src: url(https://d33wubrfki0l68.cloudfront.net/8503ab7595c89ee27cf1c0ac29bf980e6c8488c4/bde3c/fonts/avertape-light.otf);
+    font-weight: 300;
+    font-display: block;
+}
+
+@font-face {
+    font-family: Averta;
+    src: url(https://d33wubrfki0l68.cloudfront.net/d935a160c78f43e7c9d88b9e88be5a3f31482273/73dbe/fonts/avertape-semibold.otf);
+    font-weight: 600;
+    font-display: block;
+}
+
+@font-face {
+    font-family: Averta;
+    src: url(https://d33wubrfki0l68.cloudfront.net/bddf7c573539b251ff2220f83d5001779781736d/6b00c/fonts/avertape-bold.otf);
+    font-weight: 700;
+    font-display: block;
+}
+
+@font-face {
+    font-family: Averta;
+    src: url(https://d33wubrfki0l68.cloudfront.net/91048f4410f828debb722e71bbb753fb61b35e7c/58ba4/fonts/avertape-extrabold.otf);
+    font-weight: 800;
+    font-display: block;
+}
+
+@font-face {
+    font-family: Averta;
+    src: url(https://d33wubrfki0l68.cloudfront.net/1e6d510ce60fc74f208833d0ff0fc90f6ebc0756/09a04/fonts/avertape-black.otf);
+    font-weight: 900;
+    font-display: block;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+
+body,
+html {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+margin: 0;
+min-width: 300px;
+width: 100%;
+     font-family: 'Averta';
+
+
+}
+html {
+background: #f6ece3;
+color: #2c2d48;
+scroll-behavior: smooth;
+
+}
+body {box-sizing: border-box;overflow-x: hidden;position: relative;padding: 0;font-weight: 400;font-size: 1rem;color: #000000;letter-spacing: 0px;margin: 0;}
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+     font-family: 'Averta';
+
+line-height: 1.6;
+font-weight: 600;
+}
+h1 {
+font-size: 290%;
+line-height:1.2;
+}
+h2 {
+font-size: 180%;
+}
+h3 {
+font-size: 150%;
+}
+h4 {
+font-size: 125%;
+width: 100%;
+}
+p{font-size: 16px !important;line-height: 24px !important;}
+p.medium{
+     font-family: 'Averta';
+}
+.btn-brand {color: #000;padding: 16px 30px;display: inline-block;margin-top: 2rem;background: #fbd303 0% 0% no-repeat padding-box;box-shadow: 0px 0px 20px #7979794D;border-radius: 3px;cursor: pointer;text-transform: uppercase;letter-spacing: 2px;text-decoration: none!important;font-size: 18px;font-weight: 700;line-height: 1;}
+.btn-brand:hover{background: #030303;transition: all 0.5s ease;color: #fff!important;}
+/* ============= Header ================= */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    z-index: 999;
+    background: transparent;
+    padding: 0.5rem 0;
+    color: #fff;
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+.header h2{
+font-weight: 500;
+text-transform: capitalize;
+margin: 0;
+margin-left: 1rem;
+font-size: 200%;
+}
+.fixed-header{
+       background: #030303;
+       padding: 0.2rem 0;
+       position: fixed;
+       top: 0;
+       right: 0;
+       left: 0;
+       -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+       -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+       -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+       -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+       transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+       }
+.header svg.logo {
+width: 60px;
+fill: #fff;
+}
+.header .container{
+position: relative;
+}
+.header .logo{
+min-width: 40%;
+}
+.header .logo img{
+    max-width: 60px;
+    position: relative;
+    z-index: 2;
+}
+.header h1 {
+margin-right: auto;
+text-align: center;
+font-size: 30px;
+color: #1e90ff;
+font-weight: bold;
+margin-left: 20px;
+}
+.header ul {
+display: flex;
+align-items: center;
+list-style-type: none;
+justify-content: flex-end;
+flex: 1;
+}
+.header a {
+    display: block;
+    padding: 10px 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.header a span{
+font-size: 160%;
+font-weight: bold;
+}
+.header a:hover {
+color: #ffffff;
+transition: all 0.5s ease;
+opacity: 0.5;
+}
+.header ul li{
+position: relative;
+}
+/*-------------the style of humburger lines ------------*/
+[class*="line-"] {
+width: 30px;
+height: 2px;
+background-color: #fff;
+margin: 7px 0;
+border-radius: 10px;
+-webkit-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;
+}
+.header .burger {
+display: none;
+}
+/*----------------For mobile screen / small screen----------------*/
+@media only screen and (max-width: 900px) {
+body {
+overflow-x: hidden;
+}
+.header .burger {
+display: block;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+right: 0;
+z-index: 999;
+margin-right: 30px;
+}
+.nav {margin: 0;padding: 0;background: #515151;position: absolute;transform: translateX(100%);top: -10px;width: 100%;height: 100vh;overflow: hidden;z-index: 1;right: 0;bottom: 0;left:0;padding-top: 65px;display: none!important;}
+.header li {
+text-align: center;
+margin-bottom: 5px;
+}
+/*-----------Js Adds this class to dispaly and slide the nav from right sidebar--------*/
+.nav-active {
+transform: translateX(0);
+transition: all .4s ease 0s;
+justify-content: center!important;
+display: flex!important;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+/*-------The style of humburger lines rototes when humburger div is click-----------*/
+.horizontal-line {
+display: none;
+}
+.diagonal-line-1 {
+transition: all 0.3s ease;
+box-sizing: border-box;
+transform: rotate(135deg);
+margin-top: 8px;
+}
+.diagonal-line-2 {
+transition: all 0.3s ease;
+box-sizing: border-box;
+transform: rotate(-135deg);
+margin-top: -9px;
+}
+.header a{color: #ffffff;font-size: 18px;}
+}
+@media(max-width: 1024px){
+.header .logo {
+min-width: auto;
+}
+}
+
+
+/* Responsivenes ------------------- */
+@media(max-width: 768px){
+h1 {
+font-size: 220%;
+line-height:1.2;
+}
+h2 {
+font-size: 130%;
+}
+h3 {
+font-size: 120%;
+}
+h4 {
+font-size: 110%;
+width: 100%;
+}
+p {
+    font-size: 19px !important;
+    line-height: 30px !important;
+}
+}
+
+
+.videographics {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    min-height: auto;
+    background: #030303;
+    padding-top: 100px;
+}
+@media(min-width:768px){
+    .hero .content {z-index: 9;position: absolute;top: 50%;left: 25%;transform: translate(-25%, -50%);text-align: left;}
+
+}
+
+.hero .content h1{
+
+color: #fff;
+
+font-weight: 700;
+
+text-transform: capitalize;
+}
+
+.hero  .background {
+    width: 60%;
+    margin: 0;
+}
+
+
+@media(max-width: 1024px){
+    .hero  .background {
+    width:100%;
+    margin-right: -20%;
+}
+
+}
+@media(max-width: 768px){
+    .hero{
+        padding-bottom:2rem;
+    }
+    .hero .content{
+        position:relative;
+        transform: none;
+        margin: 3rem 1.5rem;
+    }
+    .hero  .background {
+    width: 100%;
+    margin-right: 0;
+}
+
+}
+
+.blurbs {
+    padding: 6rem 0;
+}
+.blurbs .blurbscard{
+    padding: 2rem 1.5rem;
+    -webkit-box-shadow: 10px 10px 20px 5px rgba(0,0,0,.12);
+    box-shadow: 10px 10px 20px 5px rgba(0,0,0,.12);
+    border-radius: .5rem;
+    border-style: none;
+    border-width: 0;
+    background-color: #fff;
+    -webkit-transition: -webkit-box-shadow .5s;
+    transition: -webkit-box-shadow .5s;
+    transition: box-shadow .5s;
+    transition: box-shadow .5s,-webkit-box-shadow .5s;
+    position: relative;
+    cursor:pointer;
+    height: 100%;
+}
+.blurbs .blurbscard  h4 {
+    font-weight: 700;
+    font-size: 160%;
+}
+.blurbs .blurbscard .icon {
+    margin-bottom:1.5rem;
+}
+.blurbs .blurbscard .icon svg{
+    width:80px;
+    height:80px;
+}
+
+.blurbs .blurbscard:hover{
+    background:#030303;
+        -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+.blurbs .blurbscard:hover .icon svg{
+   fill:#ffffff;
+}
+.blurbs .blurbscard:hover h4,
+.blurbs .blurbscard:hover p{
+   color:#ffffff;
+}
+.team {
+    padding: 6rem 0;
+    background: #fed000;
+}
+
+.team h1{
+    color:#030303;
+    margin-bottom:5rem;
+}
+
+
+.page-footer {
+    background: #030303;
+    padding: 5rem 0;
+}
+.page-footer p{
+    color:#fff;
+}
+.page-footer img{
+    width:100px
+}
+.styledlist ul li {
+    color:#fff;
+    margin-right:15px;
+}
+.styledlist ul li:last-child{
+    margin-right: 0;
+}
+.styledlist ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+.styledlist ul li a:hover{
+    opacity: 0.8;
+        transition: all 0.5s ease;
+
+}
+.styledlist ul li img{
+    width: 30px;
+}
+
+.linkedin img{
+    width: 24px;
+}
+
+.linkedin a:hover{
+    transition: all 0.5s ease;
+    opacity: 0.8;
+}
