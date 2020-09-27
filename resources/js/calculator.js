@@ -5435,7 +5435,7 @@
                         inflationRateChange: null,
                         stakedAmount: 0,
                         validatorList: [],
-                        selectedValidator: "secretvaloper16k26akna7h295rfjx3278s7xusnt736vy437y8",
+                        selectedValidator: "secretvaloper1fy2s7er0c6uxc8hmnqfgukvkf7xh22s4yr6jqe",
                         validatorCommission: null,
                         basicRewardsCalcYearly: 0,
                         basicRewardsCalcMonthly: 0,
@@ -5878,7 +5878,25 @@
                     domProps: {
                         value: (100 * t.foundationTax).toFixed(2) + " %"
                     }
-                })]),t._v(" "), n("calc-answer", [n("a", {
+                })]), t._v(" "), n("calc-answer", [n("label", {
+                    staticClass: "text-white",
+                    attrs: {
+                        for: "blocks-per-year"
+                    }
+                }, [t._v("Blocks Per Year (BPY):")]), t._v(" "), n("input", {
+                    staticClass: "bg-blue text-white px-2 opacity-100 w-36 text-right",
+                    attrs: {
+                        type: "text",
+                        id: "blocks-per-year",
+                        disabled: ""
+                    },
+                    domProps: {
+                        value: parseFloat(t.getBlocksPerYear).toLocaleString("en", {
+                            minimumFractionDigits: 0,
+                            maximumFractionDigits: 0
+                        }) + "  "
+                    }
+                })]), t._v(" "), n("calc-answer", [n("a", {
                     staticClass: "text-xs px-0 d-none",
                     attrs: {
                         href: "#"
@@ -5940,24 +5958,6 @@
                         }) + " SCRT"
                     }
                 })]), t._v(" "), n("calc-answer", [n("label", {
-                    staticClass: "text-white",
-                    attrs: {
-                        for: "blocks-per-year"
-                    }
-                }, [t._v("Blocks Per Year (BPY):")]), t._v(" "), n("input", {
-                    staticClass: "bg-blue text-white px-2 opacity-100 w-36 text-right",
-                    attrs: {
-                        type: "text",
-                        id: "blocks-per-year",
-                        disabled: ""
-                    },
-                    domProps: {
-                        value: parseFloat(t.getBlocksPerYear).toLocaleString("en", {
-                            minimumFractionDigits: 0,
-                            maximumFractionDigits: 0
-                        }) + "  "
-                    }
-                })]),  t._v(" "), n("calc-answer", [n("label", {
                     staticClass: "text-white",
                     attrs: {
                         for: "current-bonded-ratio"
@@ -6365,7 +6365,7 @@
                         }) + " USD "
                     }
                 })])], 1)]), t._v(" "), t.beenCalculated ? n("div", {
-                    staticClass: "border-2 mt-2 px-5 py-2 w-full bg-blue d-none"
+                    staticClass: "border-2 mt-2 px-5 py-2 w-full bg-blue"
                 }, [t._v("\n        Go Away 🐝 "), n("input", {
                     attrs: {
                         type: "checkbox",
@@ -6696,48 +6696,3 @@
         }, c.spread = n("DfZB"), t.exports = c, t.exports.default = c
     }
 });
-// Selection of HTML objects
-const burger = document.querySelector(".burger");
-const nav = document.querySelector(".nav");
-const horzontanlLine =document.querySelector(".line-2")
-const daigonalOne =document.querySelector(".line-1")
-const daigonalTwo =document.querySelector(".line-3")
-
-
-// Defining a function
-function toggleNav() {
-  nav.classList.toggle("nav-active");
-  horzontanlLine.classList.toggle("horizontal-line")
-  daigonalOne.classList.toggle("diagonal-line-1");
-  daigonalTwo.classList.toggle("diagonal-line-2")
-  
-}
-
-// Calling the function after click event occurs
-burger.addEventListener("click", function() {
-  toggleNav();
-});
-
-
-// Add active class to the current button (highlight it)
-
-
-jQuery(function($) {
- var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
- $('.header ul li a').each(function() {
-  if (this.href === path) {
-   $(this).addClass('active');
-  }
- });
-});
-
-
-   // navbar
-      $(window).scroll(function(){
-      if ($(window).scrollTop() >= 100) {
-        $('.header').addClass('fixed-header');
-      }
-      else {
-        $('.header').removeClass('fixed-header');
-      }
-      });
