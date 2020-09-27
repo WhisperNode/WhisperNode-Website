@@ -5395,7 +5395,7 @@
             d = s({}, (function() {
                 var t = this.$createElement;
                 return (this._self._c || t)("div", {
-                    staticClass: "m-2 flex justify-between"
+                    staticClass: "m-2 flex justify-between flex-wrap"
                 }, [this._t("default")], 2)
             }), [], !1, null, null, null).exports;
 
@@ -5607,9 +5607,9 @@
                 }, [n("div", {
                     staticClass: "flex justify-between flex-wrap border-2 w-full mt-2"
                 }, [n("div", {
-                    staticClass: "m-2 flex justify-between"
+                    staticClass: "m-2"
                 }, [n("label", {
-                    staticClass: "text-white mr-5",
+                    staticClass: "text-white mr-2",
                     attrs: {
                         for: "staked-amount"
                     }
@@ -5635,9 +5635,9 @@
                         }
                     }
                 })]), t._v(" "), n("div", {
-                    staticClass: "m-2 flex justify-between"
+                    staticClass: "m-2"
                 }, [n("label", {
-                    staticClass: "text-white mr-5",
+                    staticClass: "text-white mr-3",
                     attrs: {
                         for: "compounding-rate"
                     }
@@ -5693,7 +5693,7 @@
                 }, [t._v("Hourly")])])])]), t._v(" "), n("div", {
                     staticClass: "p-2 d-none"
                 }, [n("div", {
-                    staticClass: "m-2 flex justify-between"
+                    staticClass: "m-2 flex justify-between flex-wrap"
                 }, [n("label", {
                     staticClass: "text-white mr-5",
                     attrs: {
@@ -5720,7 +5720,7 @@
                         }
                     }
                 })]), t._v(" "), n("div", {
-                    staticClass: "m-2 flex justify-between"
+                    staticClass: "m-2 flex justify-between flex-wrap"
                 }, [n("label", {
                     staticClass: "text-white mr-5",
                     attrs: {
@@ -5783,7 +5783,7 @@
                         }
                     }, [t._v(t._s(e.description.moniker))])
                 })), 0)]), t._v(" "), n("div", {
-                    staticClass: ""
+                    staticClass: "text-center mt-3"
                 }, [n("label", {
                     staticClass: "text-white",
                     attrs: {
@@ -5809,7 +5809,7 @@
                         for: "goal-bonded"
                     }
                 }, [t._v("Target Bonded Ratio:")]), t._v(" "), n("input", {
-                    staticClass: "bg-blue text-white px-2 opacity-100 w-36 text-right",
+                    staticClass: "bg-blue text-white px-2 opacity-100 text-right",
                     attrs: {
                         type: "text",
                         id: "goal-bonded",
@@ -5824,7 +5824,7 @@
                         for: "max-inflation"
                     }
                 }, [t._v("Max Inflation:")]), t._v(" "), n("input", {
-                    staticClass: "bg-blue text-white px-2 opacity-100 w-36 text-right",
+                    staticClass: "bg-blue text-white px-2 opacity-100 text-right",
                     attrs: {
                         type: "text",
                         id: "max-inflation",
@@ -5839,7 +5839,7 @@
                         for: "min-inflation"
                     }
                 }, [t._v("Min Inflation:")]), t._v(" "), n("input", {
-                    staticClass: "bg-blue text-white px-2 opacity-100 w-36 text-right",
+                    staticClass: "bg-blue text-white px-2 opacity-100 text-right",
                     attrs: {
                         type: "text",
                         id: "min-inflation",
@@ -5854,7 +5854,7 @@
                         for: "community-tax"
                     }
                 }, [t._v("Community Tax:")]), t._v(" "), n("input", {
-                    staticClass: "bg-blue text-white px-2 opacity-100 w-36 text-right",
+                    staticClass: "bg-blue text-white px-2 opacity-100 text-right",
                     attrs: {
                         type: "text",
                         id: "community-tax",
@@ -5869,7 +5869,7 @@
                         for: "foundation-tax"
                     }
                 }, [t._v("Foundation Tax:")]), t._v(" "), n("input", {
-                    staticClass: "bg-blue text-white px-2 opacity-100 w-36 text-right",
+                    staticClass: "bg-blue text-white px-2 opacity-100 text-right",
                     attrs: {
                         type: "text",
                         id: "foundation-tax",
@@ -5894,7 +5894,7 @@
                         for: "inflation-rate"
                     }
                 }, [t._v("Current Inflation Rate:")]), t._v(" "), n("input", {
-                    staticClass: "bg-blue text-white px-2 opacity-100 w-36 text-right",
+                    staticClass: "bg-blue text-white px-2 opacity-100 text-right",
                     attrs: {
                         type: "text",
                         id: "inflation-rate",
@@ -5909,7 +5909,7 @@
                         for: "bonded-supply"
                     }
                 }, [t._v("Bonded Supply:")]), t._v(" "), n("input", {
-                    staticClass: "bg-blue text-white px-2 opacity-100 w-36 text-right",
+                    staticClass: "bg-blue text-white px-2 opacity-100 text-right",
                     attrs: {
                         type: "text",
                         id: "bonded-supply",
@@ -5927,7 +5927,7 @@
                         for: "total-supply"
                     }
                 }, [t._v("Total Supply:")]), t._v(" "), n("input", {
-                    staticClass: "bg-blue text-white px-2 opacity-100 w-36 text-right",
+                    staticClass: "bg-blue text-white px-2 opacity-100 text-right",
                     attrs: {
                         type: "text",
                         id: "total-supply",
@@ -5945,7 +5945,7 @@
                         for: "blocks-per-year"
                     }
                 }, [t._v("Blocks Per Year (BPY):")]), t._v(" "), n("input", {
-                    staticClass: "bg-blue text-white px-2 opacity-100 w-36 text-right",
+                    staticClass: "bg-blue text-white px-2 opacity-100 text-right",
                     attrs: {
                         type: "text",
                         id: "blocks-per-year",
@@ -5963,7 +5963,7 @@
                         for: "current-bonded-ratio"
                     }
                 }, [t._v("Actual Bonded Ratio:")]), t._v(" "), n("input", {
-                    staticClass: "bg-blue text-white px-2 opacity-100 w-36 text-right",
+                    staticClass: "bg-blue text-white px-2 opacity-100 text-right",
                     attrs: {
                         type: "text",
                         id: "current-bonded-ratio",
@@ -6104,7 +6104,7 @@
                         for: "current-balance"
                     }
                 }, [t._v("Current Balance")]), t._v(" "), n("input", {
-                    staticClass: "text-blue  w-36 opacity-100 bg-lightblue text-right",
+                    staticClass: "text-blue opacity-100 bg-lightblue text-right",
                     attrs: {
                         type: "text",
                         id: "current-balance",
@@ -6122,7 +6122,7 @@
                         for: "staking-rewards-yearly"
                     }
                 }, [t._v("Yearly Rewards")]), t._v(" "), n("input", {
-                    staticClass: "text-blue  w-36 opacity-100 bg-lightblue text-right",
+                    staticClass: "text-blue opacity-100 bg-lightblue text-right",
                     attrs: {
                         type: "text",
                         id: "staking-rewards-yearly",
@@ -6140,7 +6140,7 @@
                         for: "staking-rewards-monthly"
                     }
                 }, [t._v("Monthly Rewards")]), t._v(" "), n("input", {
-                    staticClass: "text-blue  w-36 opacity-100 bg-lightblue text-right",
+                    staticClass: "text-blue opacity-100 bg-lightblue text-right",
                     attrs: {
                         type: "text",
                         id: "staking-rewards-monthly",
@@ -6158,7 +6158,7 @@
                         for: "staking-rewards-weekly"
                     }
                 }, [t._v("Weekly Rewards")]), t._v(" "), n("input", {
-                    staticClass: "text-blue  w-36 opacity-100 bg-lightblue text-right",
+                    staticClass: "text-blue opacity-100 bg-lightblue text-right",
                     attrs: {
                         type: "text",
                         id: "staking-rewards-weekly",
@@ -6176,7 +6176,7 @@
                         for: "staking-rewards-daily"
                     }
                 }, [t._v("Daily Rewards")]), t._v(" "), n("input", {
-                    staticClass: "text-blue  w-36 opacity-100 bg-lightblue text-right",
+                    staticClass: "text-blue opacity-100 bg-lightblue text-right",
                     attrs: {
                         type: "text",
                         id: "staking-rewards-daily",
@@ -6194,7 +6194,7 @@
                         for: "eoy-balance"
                     }
                 }, [t._v("End of Year Balance")]), t._v(" "), n("input", {
-                    staticClass: "text-blue  w-36 opacity-100 bg-lightblue text-right",
+                    staticClass: "text-blue opacity-100 bg-lightblue text-right",
                     attrs: {
                         type: "text",
                         id: "eoy-balance",
