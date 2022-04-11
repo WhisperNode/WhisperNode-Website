@@ -52,79 +52,7 @@
 	      });
 	    },
 	    "(min-width: 992px)": function () {
-	      // Network row 1
-	      const networksRow1Tl = gsap.timeline({
-	        scrollTrigger: {
-	          trigger: ".networks-row_1",
-	          start: "top 50%",
-	          end: "top 50%"
-	        },
-	        defaults: {
-	          ease: "expo.out"
-	        },
-	        onComplete: () => {
-	          gsap.fromTo(".networks-row_1 .networks-circle_1", {
-	            rotate: -380
-	          }, {
-	            rotate: 0,
-	            duration: 30,
-	            repeat: -1,
-	            ease: "none"
-	          });
-	          gsap.fromTo(".networks-row_1 .networks-circle_2", {
-	            rotate: -380
-	          }, {
-	            rotate: 0,
-	            duration: 20,
-	            repeat: -1,
-	            ease: "none"
-	          });
-	        }
-	      });
-	      networksRow1Tl.fromTo(".networks-row_1 .networks-title", {
-	        opacity: 0,
-	        y: "50%"
-	      }, {
-	        opacity: 1,
-	        y: 0,
-	        duration: 1
-	      }).fromTo(".networks-row_1 .networks-text", {
-	        opacity: 0,
-	        y: "50%"
-	      }, {
-	        opacity: 1,
-	        y: 0,
-	        duration: 1
-	      }, "-=0.75").fromTo(".networks-row_1 .btn", {
-	        opacity: 0,
-	        x: "-50%"
-	      }, {
-	        opacity: 1,
-	        x: 0,
-	        duration: 1
-	      }, "-=0.5");
-	      networksRow1Tl.fromTo(".networks-row_1 .networks-circle svg circle", {
-	        strokeDasharray: "25 1500"
-	      }, {
-	        strokeDasharray: "25 45",
-	        duration: 3,
-	        stagger: 0.25,
-	        ease: "power4.out"
-	      }, "icon-=2").fromTo(".networks-row_1 .networks-icon", {
-	        scale: 0
-	      }, {
-	        scale: 1,
-	        duration: 1,
-	        stagger: 0.5,
-	        ease: "elastic.out(1, 0.3)"
-	      }, "icon-=1").fromTo(".networks-row_1 .networks-pic", {
-	        scale: 0
-	      }, {
-	        scale: 1,
-	        duration: 1,
-	        ease: "elastic.out(0.3, 0.2)"
-	      }, "icon+=0.5"); // Network row 2
-
+	      // Network row 2
 	      const networksRow2Tl = gsap.timeline({
 	        scrollTrigger: {
 	          trigger: ".networks-row_2",
@@ -605,7 +533,100 @@
 	    },
 	    // all
 	    all: function () {
-	      // Section services
+	      // Network row 1
+	      const networksRow1Tl = gsap.timeline({
+	        scrollTrigger: {
+	          trigger: ".section_networks",
+	          start: "top 50%",
+	          end: "top 50%"
+	        },
+	        defaults: {
+	          ease: "expo.out"
+	        },
+	        onComplete: () => {
+	          gsap.fromTo(".networks-circles .networks-circles__item:first-child", {
+	            rotate: -380
+	          }, {
+	            rotate: 0,
+	            duration: 30,
+	            repeat: -1,
+	            ease: "none"
+	          });
+	          gsap.fromTo(".networks-circles .networks-circles__item:last-child", {
+	            rotate: -380
+	          }, {
+	            rotate: 0,
+	            duration: 20,
+	            repeat: -1,
+	            ease: "none"
+	          });
+	        }
+	      });
+	      networksRow1Tl.fromTo(".networks__title", {
+	        opacity: 0,
+	        y: "-20%"
+	      }, {
+	        opacity: 1,
+	        y: 0,
+	        duration: 1
+	      }).fromTo(".networks__descr .networks__subtitle", {
+	        opacity: 0,
+	        y: "-50%"
+	      }, {
+	        opacity: 1,
+	        y: 0,
+	        duration: 1
+	      }).fromTo(".networks__descr .networks__text", {
+	        opacity: 0,
+	        y: "-50%"
+	      }, {
+	        opacity: 1,
+	        y: 0,
+	        duration: 1
+	      }, "-=0.75").fromTo(".networks__descr .networks__btn", {
+	        opacity: 0,
+	        y: "20%"
+	      }, {
+	        opacity: 1,
+	        y: 0,
+	        duration: 1
+	      }, "-=0.5").fromTo(".networks__controls .prev", {
+	        opacity: 0,
+	        x: "-50%"
+	      }, {
+	        opacity: 1,
+	        x: 0,
+	        duration: 1
+	      }, "-=0.75").fromTo(".networks__controls .next", {
+	        opacity: 0,
+	        x: "50%"
+	      }, {
+	        opacity: 1,
+	        x: 0,
+	        duration: 1
+	      }, "-=0.75");
+	      networksRow1Tl.fromTo(".networks-circles svg circle", {
+	        strokeDasharray: "25 1500"
+	      }, {
+	        strokeDasharray: "25 45",
+	        duration: 3,
+	        stagger: 0.25,
+	        ease: "power4.out"
+	      }, "icon-=2").fromTo(".networks-row_1 .networks-icon", {
+	        scale: 0
+	      }, {
+	        scale: 1,
+	        duration: 1,
+	        stagger: 0.5,
+	        ease: "elastic.out(1, 0.3)"
+	      }, "icon-=1").fromTo(".networks-row_1 .networks-pic", {
+	        scale: 0
+	      }, {
+	        scale: 1,
+	        duration: 1,
+	        ease: "elastic.out(0.3, 0.2)"
+	      }, "icon+=0.5"); // Section services
+
 	      const servicesTl = gsap.timeline({
 	        scrollTrigger: {
 	          trigger: ".section_services",
@@ -888,7 +909,79 @@
 	        opacity: 1,
 	        x: 0,
 	        duration: 1
-	      }, "form"); // Footer
+	      }, "form"); // Team decorations
+
+	      function teamDecorTL() {
+	        var tl = gsap.timeline();
+	        tl.fromTo(".team-abs_1 rect", {
+	          opacity: 0,
+	          y: 10
+	        }, {
+	          opacity: 1,
+	          duration: 1,
+	          ease: "power1.inOut",
+	          y: 0,
+	          stagger: {
+	            from: "start",
+	            amount: 1
+	          },
+	          onComplete: () => {
+	            gsap.fromTo(".team-abs_1 rect", {
+	              y: 0
+	            }, {
+	              y: 10,
+	              duration: 1.5,
+	              ease: "power1.inOut",
+	              stagger: {
+	                repeat: -1,
+	                from: "start",
+	                yoyo: true,
+	                amount: 1
+	              }
+	            });
+	          }
+	        }).fromTo(".team-abs_2 rect", {
+	          opacity: 0,
+	          y: 10
+	        }, {
+	          opacity: 1,
+	          duration: 1,
+	          ease: "power1.inOut",
+	          y: 0,
+	          stagger: {
+	            from: "start",
+	            amount: 1
+	          },
+	          onComplete: () => {
+	            gsap.fromTo(".team-abs_2 rect", {
+	              y: 0
+	            }, {
+	              y: 10,
+	              duration: 1.5,
+	              ease: "power1.inOut",
+	              stagger: {
+	                repeat: -1,
+	                from: "start",
+	                yoyo: true,
+	                amount: 1
+	              }
+	            });
+	          }
+	        });
+	        return tl;
+	      }
+
+	      const teamMaster = gsap.timeline({
+	        scrollTrigger: {
+	          trigger: ".section_team",
+	          start: "top 75%",
+	          end: "top 75%"
+	        },
+	        defaults: {
+	          ease: "expo.out"
+	        }
+	      });
+	      teamMaster.add(teamDecorTL(), "section_team"); // Footer
 
 	      function footerDecorTl() {
 	        var tl = gsap.timeline();
@@ -1108,16 +1201,61 @@
 	  const btnDelegate = document.querySelectorAll(".btn-delegate");
 	  const popupInput = document.querySelector(".popup-input input");
 	  const popupBtn = document.querySelector(".popup-btn .btn");
+	  const popupPercentFirst = document.querySelector(".popup-learn__list li:first-child .popup-learn-percent");
+	  const popupPercentSecond = document.querySelector(".popup-learn__list li:last-child .popup-learn-percent");
+	  const popupLearnBtn = document.querySelector(".popup-learn-link");
 	  btnDelegate.forEach(btn => {
 	    btn.addEventListener("click", function () {
 	      if (this.classList.contains("js-secret")) {
 	        popupInput.value = "secretvaloper16k26akna7h295rfjx3278s7xusnt736vy437y8";
 	        popupBtn.setAttribute("href", "https://secretnodes.com/secret/chains/secret-2/validators/237A513A407E33679C746E350B3307BAA5BCDEFD");
+	        popupLearnBtn.setAttribute("href", "https://sentinel.co/");
 	      }
 
 	      if (this.classList.contains("js-sentinel")) {
 	        popupInput.value = "sentvaloper1tjgec0ssfrlldmut69xsp8vzljugg0g306aae2";
 	        popupBtn.setAttribute("href", "https://explorer.sentinel.co/validator/sentvaloper1tjgec0ssfrlldmut69xsp8vzljugg0g306aae2");
+	        popupLearnBtn.setAttribute("href", "https://sentinel.co/");
+	      }
+
+	      if (this.classList.contains("js-desmos")) {
+	        popupInput.value = "desmosvaloper1lf3fg79gf2qf6ept7ec22kjd8s6gj3swr2ca0v";
+	        popupBtn.setAttribute("href", "https://secretnodes.com/secret/chains/secret-2/validators/237A513A407E33679C746E350B3307BAA5BCDEFD");
+	        popupPercentFirst.innerHTML = "10%";
+	        popupPercentSecond.innerHTML = "100%";
+	        popupLearnBtn.setAttribute("href", "https://sentinel.co/");
+	      }
+
+	      if (this.classList.contains("js-osmosis")) {
+	        popupInput.value = "desmosvaloper1lf3fg79gf2qf6ept7ec22kjd8s6gj3swr2ca0v";
+	        popupBtn.setAttribute("href", "https://secretnodes.com/secret/chains/secret-2/validators/237A513A407E33679C746E350B3307BAA5BCDEFD");
+	        popupPercentFirst.innerHTML = "10%";
+	        popupPercentSecond.innerHTML = "100%";
+	        popupLearnBtn.setAttribute("href", "https://osmosis.zone/");
+	      }
+
+	      if (this.classList.contains("js-odin")) {
+	        popupInput.value = "odinvaloper18av2qz6mckvlj95c9u7sjqvd9sfk40vcxeshk6";
+	        popupBtn.setAttribute("href", "https://secretnodes.com/secret/chains/secret-2/validators/237A513A407E33679C746E350B3307BAA5BCDEFD");
+	        popupPercentFirst.innerHTML = "10%";
+	        popupPercentSecond.innerHTML = "100%";
+	        popupLearnBtn.setAttribute("href", "https://odinprotocol.io/");
+	      }
+
+	      if (this.classList.contains("js-juno")) {
+	        popupInput.value = "odinvaloper18av2qz6mckvlj95c9u7sjqvd9sfk40vcxeshk6";
+	        popupBtn.setAttribute("href", "https://secretnodes.com/secret/chains/secret-2/validators/237A513A407E33679C746E350B3307BAA5BCDEFD");
+	        popupPercentFirst.innerHTML = "10%";
+	        popupPercentSecond.innerHTML = "100%";
+	        popupLearnBtn.setAttribute("href", "https://www.junonetwork.io/");
+	      }
+
+	      if (this.classList.contains("js-comdex")) {
+	        popupInput.value = "comdexvaloper19qz6sgw7llrft2x05lp4swy569e5sla6gl3cuu";
+	        popupBtn.setAttribute("href", "https://secretnodes.com/secret/chains/secret-2/validators/237A513A407E33679C746E350B3307BAA5BCDEFD");
+	        popupPercentFirst.innerHTML = "10%";
+	        popupPercentSecond.innerHTML = "60%";
+	        popupLearnBtn.setAttribute("href", "https://comdex.one/home");
 	      }
 	    });
 	  }); // Lottie
@@ -1435,6 +1573,70 @@
 	  if (servIllustr) {
 	    Visible(servIllustr);
 	  }
+	});
+	document.addEventListener('DOMContentLoaded', function () {
+	  // networks carousel 
+	  const networksSlider = $('.networks-carousel');
+	  const networksContentSlider = $('.networks-content-carousel');
+	  networksSlider.owlCarousel({
+	    loop: true,
+	    mouseDrag: false,
+	    touchDrag: false,
+	    items: 4,
+	    dots: false,
+	    nav: false,
+	    center: true,
+	    stagePadding: 20,
+	    margin: 120,
+	    autoHeight: true,
+	    responsive: {
+	      1180: {
+	        stagePadding: 10
+	      },
+	      1024: {
+	        items: 3,
+	        margin: 120,
+	        stagePadding: 0
+	      },
+	      820: {
+	        items: 3,
+	        margin: 200
+	      },
+	      768: {
+	        items: 3,
+	        margin: 100,
+	        stagePadding: 50
+	      },
+	      468: {
+	        items: 2,
+	        margin: 50,
+	        stagePadding: 50
+	      },
+	      390: {
+	        items: 1,
+	        margin: 50,
+	        stagePadding: 115,
+	        autoHeight: true
+	      }
+	    }
+	  });
+	  networksContentSlider.owlCarousel({
+	    loop: true,
+	    mouseDrag: false,
+	    touchDrag: false,
+	    items: 1,
+	    dots: false,
+	    nav: false,
+	    center: true
+	  });
+	  $('.networks__controls .prev').click(function () {
+	    networksSlider.trigger('prev.owl.carousel');
+	    networksContentSlider.trigger('prev.owl.carousel');
+	  });
+	  $('.networks__controls .next').click(function () {
+	    networksSlider.trigger('next.owl.carousel');
+	    networksContentSlider.trigger('next.owl.carousel');
+	  });
 	});
 
 })));

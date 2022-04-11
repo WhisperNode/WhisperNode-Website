@@ -114,13 +114,72 @@
 		justify-content space-between
 		align-items center
 	&__link
+		position relative
+		display flex
+		align-items center
+		justify-content flex-start
 		font-size 15px
 		line-height 40px
 		font-weight 450
 		color $white
 		font-family 'Avenir Next Cyr Medium'
+		cursor pointer
+		path
+			transition $transition
 		&:hover
 			color $accent
+			path
+				stroke $accent
+			.nav__arrow
+				transform rotate(0)
+			> .sub
+				opacity 1
+				visibility visible
+	&__icon
+		margin-left 4px
+	&__arrow
+		transition $transition
+		transform rotate(-180deg)
+	&__sub
+		top 50px
+		left -20px
+		min-width 220px
+		background-color $white
+		border-radius 30px
+
+.sub
+	position absolute
+	padding 24px 20px 20px 30px
+	opacity 0
+	visibility hidden
+	transition $transition
+	&__list
+		padding 0
+	&__link
+		display flex
+		align-items center
+		justify-content space-between
+		&:hover
+			.sub__icon
+				background-color $accent
+	&__text
+		font-size 15px
+		line-height 40px
+		font-weight 500
+		color $link-color
+	&__icon
+		width 32px
+		height 32px
+		border-radius 50%
+		background-color transparent
+		display flex
+		align-items center
+		justify-content center
+		transition $transition
+		svg
+			max-width 11px
+			width 100%
+
 
 		
 /*==========  Desktop First  ==========*/
@@ -171,6 +230,15 @@
 	.logo-abs
 		width 80px
 		height 80px
+
+	.nav__arrow
+		path
+			stroke $black
+	.nav__sub
+		left -55px
+		top 30px
+
+
 		
 
 @media (max-height : 500px) and (max-width: 1024px)
