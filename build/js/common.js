@@ -1590,6 +1590,12 @@
 	    margin: 120,
 	    autoHeight: true,
 	    responsive: {
+	      1920: {
+	        stagePadding: 100,
+	        margin: 220,
+	        items: 4,
+	        center: true
+	      },
 	      1180: {
 	        stagePadding: 10
 	      },
@@ -1627,7 +1633,12 @@
 	    items: 1,
 	    dots: false,
 	    nav: false,
-	    center: true
+	    center: true,
+	    responsive: {
+	      1920: {
+	        margin: 200
+	      }
+	    }
 	  });
 	  $('.networks__controls .prev').click(function () {
 	    networksSlider.trigger('prev.owl.carousel');

@@ -1799,6 +1799,12 @@ document.addEventListener('DOMContentLoaded', function(){
 		margin: 120,
 		autoHeight: true,
 		responsive:{
+			1920:{
+				stagePadding: 100,
+				margin: 220,
+				items: 4,
+				center: true,
+			},
 			1180:{
 				stagePadding: 10,
 			},
@@ -1838,6 +1844,11 @@ document.addEventListener('DOMContentLoaded', function(){
 		dots: false,
 		nav: false,
 		center: true,
+		responsive:{
+			1920:{
+				margin: 200,
+			}
+		}
 	});
 
 	$('.networks__controls .prev').click(function(){
