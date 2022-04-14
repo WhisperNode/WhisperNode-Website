@@ -1234,12 +1234,12 @@
 	        popupLearnBtn.setAttribute("href", "https://osmosis.zone/");
 	      }
 
-	      if (this.classList.contains("js-odin")) {
+	      if (this.classList.contains("js-cheqd")) {
 	        popupInput.value = "odinvaloper18av2qz6mckvlj95c9u7sjqvd9sfk40vcxeshk6";
-	        popupBtn.setAttribute("href", "https://secretnodes.com/secret/chains/secret-2/validators/237A513A407E33679C746E350B3307BAA5BCDEFD");
+	        popupBtn.setAttribute("href", "https://cheqd.ezstaking.io/validators/cheqdvaloper1qsp3a2qd6km9g0hczsac8279wcwmzmvzgvre8w");
 	        popupPercentFirst.innerHTML = "10%";
 	        popupPercentSecond.innerHTML = "100%";
-	        popupLearnBtn.setAttribute("href", "https://odinprotocol.io/");
+	        popupLearnBtn.setAttribute("href", "https://cheqd.io/");
 	      }
 
 	      if (this.classList.contains("js-juno")) {
