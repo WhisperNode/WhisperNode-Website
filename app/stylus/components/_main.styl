@@ -359,13 +359,18 @@ h3
 .networks
 	&-title
 		margin-bottom 20px
-	&-text
+	&__text
 		padding-bottom 0
 		margin-bottom 57px
 		a
 			color $accent
+			cursor pointer
 			&:hover
 				color $white
+	&__content
+		max-width 720px
+		margin auto
+		position relative
 	&-info
 		max-width: 460px
 	&-row
@@ -600,7 +605,7 @@ h3
 		display flex
 		align-items center
 		justify-content space-between
-		top 25%
+		top 0
 		z-index 99
 		div
 			cursor pointer

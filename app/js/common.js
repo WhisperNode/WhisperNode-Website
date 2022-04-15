@@ -1844,6 +1844,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		dots: false,
 		nav: false,
 		center: true,
+		margin: 500,
 		responsive:{
 			1920:{
 				margin: 200,
