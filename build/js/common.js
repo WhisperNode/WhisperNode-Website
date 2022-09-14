@@ -1208,8 +1208,8 @@
 	    btn.addEventListener("click", function () {
 	      if (this.classList.contains("js-secret")) {
 	        popupInput.value = "secretvaloper16k26akna7h295rfjx3278s7xusnt736vy437y8";
-	        popupBtn.setAttribute("href", "https://secretnodes.com/secret/chains/secret-2/validators/237A513A407E33679C746E350B3307BAA5BCDEFD");
-	        popupLearnBtn.setAttribute("href", "https://sentinel.co/");
+	        popupBtn.setAttribute("href", "https://restake.whispernode.com/secretnetwork/secretvaloper16k26akna7h295rfjx3278s7xusnt736vy437y8");
+	        popupLearnBtn.setAttribute("href", "https://scrt.network");
 	      }
 
 	      if (this.classList.contains("js-sentinel")) {

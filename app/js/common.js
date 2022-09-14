@@ -1386,9 +1386,9 @@ window.addEventListener("load", function () {
 					"secretvaloper16k26akna7h295rfjx3278s7xusnt736vy437y8";
 				popupBtn.setAttribute(
 					"href",
-					"https://secretnodes.com/secret/chains/secret-2/validators/237A513A407E33679C746E350B3307BAA5BCDEFD"
+					"https://restake.whispernode.com/secretnetwork/secretvaloper16k26akna7h295rfjx3278s7xusnt736vy437y8"
 				);
-				popupLearnBtn.setAttribute("href", "https://sentinel.co/");
+				popupLearnBtn.setAttribute("href", "https://scrt.network");
 			}
 			if (this.classList.contains("js-sentinel")) {
 				popupInput.value = "sentvaloper1tjgec0ssfrlldmut69xsp8vzljugg0g306aae2";
